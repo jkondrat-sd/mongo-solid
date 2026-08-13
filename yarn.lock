@@ -2309,7 +2309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.67.0, @typescript-eslint/utils@npm:^7.13.1 || ^8.0.0, @typescript-eslint/utils@npm:^8.37.0":
+"@typescript-eslint/utils@npm:8.67.0, @typescript-eslint/utils@npm:^8.0.0, @typescript-eslint/utils@npm:^8.37.0":
   version: 8.67.0
   resolution: "@typescript-eslint/utils@npm:8.67.0"
   dependencies:
@@ -2701,10 +2701,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^7.2.0, bson@npm:^7.3.1":
-  version: 7.3.1
-  resolution: "bson@npm:7.3.1"
-  checksum: 10c0/1fead90b1081704a1844c959320a81669a85aa896eb654913c81ee6f3001c5645cd33f88b37538e3359432129d1b73a98edd8ba2b146e9c82a7f9269f1e73a06
+"bson@npm:^7.2.0, bson@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "bson@npm:7.3.2"
+  checksum: 10c0/c927f393252e79d033b750b778c5f7c3f3ffff6d2b32fd31e72199b1ab63a3a98e294d0095ac0a3b0fa7bbeb2b0886765085babf4d8377b1b1f105f356ca8f36
   languageName: node
   linkType: hard
 
@@ -3298,20 +3298,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-solid@npm:^0.14.5":
-  version: 0.14.5
-  resolution: "eslint-plugin-solid@npm:0.14.5"
+"eslint-plugin-solid@npm:^0.15.0":
+  version: 0.15.0
+  resolution: "eslint-plugin-solid@npm:0.15.0"
   dependencies:
-    "@typescript-eslint/utils": "npm:^7.13.1 || ^8.0.0"
+    "@typescript-eslint/utils": "npm:^8.0.0"
     estraverse: "npm:^5.3.0"
     is-html: "npm:^2.0.0"
     kebab-case: "npm:^1.0.2"
     known-css-properties: "npm:^0.30.0"
     style-to-object: "npm:^1.0.6"
   peerDependencies:
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
+    eslint: ^9.0.0 || ^10.0.0
     typescript: ">=4.8.4"
-  checksum: 10c0/0ac5dfd2f1ff1cf032a881538218b4870d30b9592d59dab1be618615b7e7ed36d027778f6eeb5c82ec8d3b6d81b047b0ea6e87af21839004eca2de4162be3e47
+  checksum: 10c0/a3dca0102b6b8973fd19eccdcff28b1fc4abe304e489e5d39e9bf6476010b6f9bf7904592e8ded875178a058c111a98fe5d9f5dd2c810ca4b2259396509bc695
   languageName: node
   linkType: hard
 
@@ -3951,10 +3951,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.13.1":
-  version: 4.13.1
-  resolution: "hono@npm:4.13.1"
-  checksum: 10c0/83524961f806293464e6c3b31a7fd2ab8cd8e9cb66e65dea1fbbefb70744844c13b7409ed9b49b43e8543e5c0f1b851f2586fa759eea9da0b69503b58cd0d985
+"hono@npm:^4.13.2":
+  version: 4.13.2
+  resolution: "hono@npm:4.13.2"
+  checksum: 10c0/063daaa596bfb1ed3a4dc523a9f47725cf8d56e0918c21a241161f6f1996229f5525bf0f70d6b15cc28912720ddde519584eeb06fb92730a66f01e39faba8131
   languageName: node
   linkType: hard
 
@@ -4971,13 +4971,13 @@ __metadata:
     "@tailwindcss/vite": "npm:^4.3.3"
     "@types/node": "npm:^26.2.0"
     "@yarnpkg/sdks": "npm:^3.3.1"
-    bson: "npm:^7.3.1"
+    bson: "npm:^7.3.2"
     daisyui: "npm:^5.7.16"
     eslint: "npm:^10.8.1"
-    eslint-plugin-solid: "npm:^0.14.5"
+    eslint-plugin-solid: "npm:^0.15.0"
     eslint-plugin-tailwindcss: "npm:^4.2.0"
     eslint-plugin-unicorn: "npm:^73.0.0"
-    hono: "npm:^4.13.1"
+    hono: "npm:^4.13.2"
     mongodb: "npm:^7.5.0"
     mongodb-query-parser-esm: "npm:^4.7.9"
     solid-js: "npm:^1.9.14"

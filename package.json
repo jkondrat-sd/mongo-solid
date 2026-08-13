@@ -29,8 +29,8 @@
   "dependencies": {
     "@solid-primitives/pagination": "^0.5.2",
     "@speed-highlight/core": "^1.2.24",
-    "bson": "^7.3.1",
-    "hono": "^4.13.1",
+    "bson": "^7.3.2",
+    "hono": "^4.13.2",
     "mongodb": "^7.5.0",
     "mongodb-query-parser-esm": "^4.7.9",
     "solid-js": "^1.9.14"
@@ -42,7 +42,7 @@
     "@yarnpkg/sdks": "^3.3.1",
     "daisyui": "^5.7.16",
     "eslint": "^10.8.1",
-    "eslint-plugin-solid": "^0.14.5",
+    "eslint-plugin-solid": "^0.15.0",
     "eslint-plugin-tailwindcss": "^4.2.0",
     "eslint-plugin-unicorn": "^73.0.0",
     "tailwindcss": "^4.3.3",

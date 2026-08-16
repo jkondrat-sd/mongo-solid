@@ -36,11 +36,11 @@
     "solid-js": "^1.9.14"
   },
   "devDependencies": {
-    "@hono/node-server": "^2.1.0",
+    "@hono/node-server": "^2.1.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.2.0",
     "@yarnpkg/sdks": "^3.3.1",
-    "daisyui": "^5.7.16",
+    "daisyui": "^5.7.17",
     "eslint": "^10.8.1",
     "eslint-plugin-solid": "^0.15.0",
     "eslint-plugin-tailwindcss": "^4.2.0",

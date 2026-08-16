@@ -1,4 +1,4 @@
-import { highlightText } from '@speed-highlight/core'
+import { highlightHTML } from '@speed-highlight/core'
 import { createSignal, createResource, createMemo, createEffect } from 'solid-js'
 
 interface FoldableRange {
@@ -139,7 +139,7 @@ export default function useCodeEditor(
     renderData,
     async ({ displayCode, hiddenTextMap }) => {
       try {
-        const highlighted = await highlightText(displayCode, 'js', false)
+        const highlighted = await highlightHTML(displayCode, 'js')
         return injectEllipsis(highlighted, hiddenTextMap)
       } catch {
         return injectEllipsis(escapeHtml(displayCode), hiddenTextMap)

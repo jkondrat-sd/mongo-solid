@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "@solid-primitives/pagination": "^0.5.2",
-    "@speed-highlight/core": "^1.2.24",
+    "@speed-highlight/core": "^2.0.0",
     "bson": "^7.3.2",
     "hono": "^4.13.2",
     "mongodb": "^7.5.0",

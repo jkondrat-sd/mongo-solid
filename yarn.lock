@@ -1846,10 +1846,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@speed-highlight/core@npm:^1.2.24":
-  version: 1.2.24
-  resolution: "@speed-highlight/core@npm:1.2.24"
-  checksum: 10c0/a97954773939bf2375fccb54affeedaf2b6531bc8d8c83459637d7245e9fed77ecc2cc5da5cbb99142a7e2df0e316dbfa44e61f1fda6e2a5a160ad5eb3e9dfed
+"@speed-highlight/core@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@speed-highlight/core@npm:2.0.0"
+  checksum: 10c0/cec88b40635e49dfd4288614c9b54f083312182d40b19c5d45c92a421f105eb69de88f9fa22693aec6eb0f22d61db7f0f6dc6af6a8e8954180a1cfb4756b3801
   languageName: node
   linkType: hard
 
@@ -4994,7 +4994,7 @@ __metadata:
   dependencies:
     "@hono/node-server": "npm:^2.1.0"
     "@solid-primitives/pagination": "npm:^0.5.2"
-    "@speed-highlight/core": "npm:^1.2.24"
+    "@speed-highlight/core": "npm:^2.0.0"
     "@tailwindcss/vite": "npm:^4.3.3"
     "@types/node": "npm:^26.2.0"
     "@yarnpkg/sdks": "npm:^3.3.1"

@@ -35,12 +35,10 @@ apiRoutes.post('/:functionName', async (c: Context) => {
       else return c.json({ error: 'Unsupported Content-Type' }, 400)
     }
     const result = await api[functionName](payload)
-    if (result instanceof Response) return result
-    return c.json(result)
+    return result instanceof Response ? result : c.json(result)
   } catch (error) {
     console.error(error)
-    if (error instanceof HTTPException) return c.json({ error: error.name, message: error.message }, error.status)
-    return c.json({ error: 'Internal Server Error' }, 500)
+    return error instanceof HTTPException ? c.json({ error: error.name, message: error.message }, error.status) : c.json({ error: 'Internal Server Error' }, 500)
   }
 })
 

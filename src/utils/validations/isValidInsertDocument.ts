@@ -90,8 +90,7 @@ function parseAndValidate(str: string): ReturnValidation {
   } catch (error) {
     return { error: `Invalid syntax: ${(error as Error).message}` }
   }
-  if (!isPlainObject(obj)) return { error: 'Must be a valid object' }
-  return validateFields(obj as Record<string, unknown>) ?? {}
+  return isPlainObject(obj) ? validateFields(obj as Record<string, unknown>) ?? {} : { error: 'Must be a valid object' }
 }
 
 /**

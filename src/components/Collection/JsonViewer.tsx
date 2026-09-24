@@ -73,10 +73,7 @@ const JsonNode: Component<{
 
   const displayedArrayElements = () => {
     if (!isArray) return []
-    if (showAllArrayElements() || props.value.length <= MAX_ARRAY_ELEMENTS) {
-      return props.value
-    }
-    return props.value.slice(0, MAX_ARRAY_ELEMENTS)
+    return showAllArrayElements() || props.value.length <= MAX_ARRAY_ELEMENTS ? props.value : props.value.slice(0, MAX_ARRAY_ELEMENTS)
   }
 
   const displayValue = () => {
@@ -86,9 +83,7 @@ const JsonNode: Component<{
       return <span class="text-green-300"><RenderText text={props.value} /></span>
     if (typeof props.value === 'boolean')
       return <span class="text-yellow-300">{props.value.toString()}</span>
-    if (props.value === null)
-      return <span class="text-gray-400">null</span>
-    return props.value
+    return props.value === null ? <span class="text-gray-400">null</span> : props.value
   }
 
   // Show array length in collapsed state

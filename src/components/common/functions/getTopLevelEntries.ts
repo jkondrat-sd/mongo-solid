@@ -13,8 +13,7 @@ const getLineDelta = (line: string): number => {
   if (trimmed.endsWith(',') || trimmed.endsWith(';')) trimmed = trimmed.slice(0, -1).trimEnd()
   const lastChar = trimmed.at(-1)
   if (lastChar === '{' || lastChar === '[') return 1
-  if (lastChar === '}' || lastChar === ']') return -1
-  return 0
+  return lastChar === '}' || lastChar === ']' ? -1 : 0
 }
 
 const KEY_RE = /^\s*(?:(['"])((?:(?!\1)[^\\]|\\.)*)\1|([$\w][\w$]*))\s*:/

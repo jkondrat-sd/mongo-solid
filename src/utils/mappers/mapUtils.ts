@@ -55,11 +55,7 @@ const deepmergeObject = (target: IObject, src: IObject) => {
 }
 
 export const deepmerge = (target: object[] | object, src: object[] | object) => {
-  if (Array.isArray(src)) {
-    return deepmergeArray(target as object[], src as object[])
-  }
-
-  return deepmergeObject(target as object, src as object)
+  return Array.isArray(src) ? deepmergeArray(target as object[], src as object[]) : deepmergeObject(target as object, src as object)
 }
 
 /**

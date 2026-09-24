@@ -74,7 +74,8 @@ const SearchAdvanced: Component<{ data: DataCollection }> = (props) => {
               setCodeQuery(newCode)
               // Remove all spaces, tabs, and newlines for a safe check
               const cleanQuery = newCode.replaceAll(/\s+/g, '')
-              if (cleanQuery !== '' && cleanQuery !== '{}' && (checkboxAggregate() ? cleanQuery !== '[]' : true)) {
+              // eslint-disable-next-line unicorn/prefer-simple-condition-first
+              if (cleanQuery !== '' && cleanQuery !== '{}' && !(checkboxAggregate() && cleanQuery === '[]')) {
                 setIsCodeQueryValid(!(checkboxAggregate() ? isValidAggregation : isValidQuery)(newCode).error)
               }
             }}

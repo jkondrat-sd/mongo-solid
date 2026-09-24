@@ -43,10 +43,7 @@ const toSafeBSON = (string: string) => {
 }
 
 const parseObjectId = (string: string) => {
-  if (/^[\da-f]{24}$/i.test(string)) {
-    return new ObjectId(string)
-  }
-  return toBSON(string)
+  return /^[\da-f]{24}$/i.test(string) ? new ObjectId(string) : toBSON(string)
 }
 
 /**

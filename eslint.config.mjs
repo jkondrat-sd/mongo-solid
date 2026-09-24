@@ -38,6 +38,7 @@ export default defineConfig({
     'unicorn/no-null': 0,
     'unicorn/no-top-level-side-effects': 0,
     'unicorn/numeric-separators-style': 0,
+    'unicorn/prefer-continue': 0,
     'unicorn/prefer-early-return': 0,
     'unicorn/prefer-node-protocol': 0,
 
